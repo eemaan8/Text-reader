@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: text-reader
+    env: python
+    buildCommand: ""
+    startCommand: python app.py
+    envVars:
+      - key: OCR_SPACE_API_KEY
+        value: your_real_ocr_api_key_here
